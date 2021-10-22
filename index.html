@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+	<HTML>
+		<head>
+			<title>
+				Test Page
+				</title>
+			</head>
+		<body>
+			<div id="TT"> </div>
+			<script>
+			fetch.("index.php")
+			.then(response=>response.json())
+			.then(data => {
+    console.log(data.sentence)
+    document.querySelector("TT").innerText=data.sentence
+    
+  })
+  </script>
+			</bodyZ>
+		
+	</HTML>
+	
